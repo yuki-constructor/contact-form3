@@ -61,7 +61,7 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="tel" name="tel" placeholder="09012345678" />
+              <input type="tel" name="tell" placeholder="09012345678" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->

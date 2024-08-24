@@ -13,13 +13,13 @@ class ContactController extends Controller
 
     public function confirm(Request $request)
     {
-        $contact = $request->only(['name', 'email', 'tel', 'content']);
+        $contact = $request->only(['name', 'email', 'tell', 'content']);
         return view('contacts.confirm', ['contact' => $contact]);
     }
 
     public function store(Request $request)
    {
-    $contact = $request->only(['name', 'email', 'tel', 'content']);
+    $contact = $request->only(['name', 'email', 'tell', 'content']);
    }
 
 }
