@@ -92,6 +92,7 @@
         </div>
         <div class="form__button">
           <button class="form__button-submit" type="submit">送信</button>
+          <button name="back" class="form__button-submit" type="submit">修正する</button>
         </div>
       </form>
     </div>

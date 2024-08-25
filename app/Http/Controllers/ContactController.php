@@ -14,7 +14,8 @@ class ContactController extends Controller
         return view('contacts.index');
     }
 
-    public function confirm(ContactRequest $request)
+    // public function confirm(ContactRequest $request)
+    public function confirm(Request $request)
     {
         $contact = $request->only([
         'first_name',
@@ -29,8 +30,15 @@ class ContactController extends Controller
         return view('contacts.confirm', ['contact' => $contact]);
     }
 
-    public function store(ContactRequest $request)
+    // public function store(ContactRequest $request)
+    public function store(Request $request)
    {
+
+    if ($request->has('back')) {
+        return redirect('/')->withInput($request->all());
+        // return back();
+    }
+
     $contact = $request->only([
         'first_name',
         'last_name',
