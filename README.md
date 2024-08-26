@@ -9,7 +9,7 @@
 - Laravel Framework 11.21.0
 
 ## ER図
-< - - - 作成したER図の画像 - - - >
+
 ![ER図](https://github.com/user-attachments/assets/f64c5674-6d4e-445c-aaad-93b042ec3cd8)
 
 ## URL
