@@ -9,7 +9,7 @@ use App\Http\Controllers\AdminContactController;
 // お問い合わせ
 
 // お問い合わせ入力フォームの表示
-Route::get('/', [ContactController::class, 'index']);
+Route::get('/', [ContactController::class, 'index'])->name('contacts.index');
 // お問い合わせ確認画面の表示
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 // データの保存と完了ページの表示
