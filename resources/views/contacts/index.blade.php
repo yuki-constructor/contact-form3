@@ -161,20 +161,12 @@
             <div class="form__group-content">
               <div class="form__input--text">
                 <select id="category" name="category_id">
-                    <option value="">選択してください</option>
-                    {{-- <option value="Option 1" {{ old('content') == 'Option 1' ? 'checked' : '' }}>Option 1</option> --}}
-                    <option value="1" >Option 1</option>
-                    {{-- <option value="Option 2"  {{ old('content') == 'Option 2' ? 'checked' : '' }}>Option 2</option> --}}
-                    <option value="2" >Option 2</option>
-                    {{-- <option value="Option 3" {{ old('content') == 'Option3' ? 'checked' : '' }}>Option 3</option> --}}
-                    <option value="3">Option 3</option>
-                    {{-- <option value="Option 4"  {{ old('content') == 'Option 4' ? 'checked' : '' }}>Option 4</option> --}}
-                    <option value="4" >Option 4</option>
 
-                    {{-- <option value="">選択してください</option>
+
+                    <option value="">選択してください</option>
                     @foreach($categories as $category)
-                    <option value="{{$category->id}}" @if($category->id == old("category_id",$blog->category->id)) selected @endif>{{$category->name}}</option>
-                    @endforeach --}}
+                    <option value="{{$category->id}}" @if($category->id == old("category_id")) selected @endif>{{$category->content}}</option>
+                    @endforeach
                 </select>
               </div>
               <div class="form__error">

@@ -38,6 +38,14 @@
     margin-bottom: 15px;
   }
 
+  .form__group-title {
+    width: 30%;
+  }
+
+  .form__group-content {
+    width: 50%;
+  }
+
   .form__label--required {
     margin-left: 5px;
     padding: 4px 6px;
