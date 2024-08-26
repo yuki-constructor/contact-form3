@@ -46,9 +46,7 @@
      </select>
    </div>
    <div class="search-form__item">
-     <select class="search-form__item-select"  name="created_at">
-       <option value="">年/月/日</option>
-     </select>
+       <input type="date" name="date"></input>
    </div>
    <div class="search-form__button">
      <button class="search-form__button-submit" type="submit">検索</button>
@@ -57,6 +55,9 @@
      <button class="search-form__button-submit" type="submit">リセット</button>
    </div>
  </form>
+
+
+ {{$contacts->links()}}
 
  {{-- 一覧 --}}
 

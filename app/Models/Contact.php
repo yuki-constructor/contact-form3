@@ -27,12 +27,28 @@ class Contact extends Model
       return $this->belongsTo(Category::class);
    }
 
-   public function scopeCategorySearch($query,$gender)
+   public function scopeGenderSearch($query,$gender)
 {
-  if (!empty($gender)) {
-    $query->where('gender', $gender);
+    if (!empty($gender)) {
+    $query->where('gender', $gender)
+    ;
   }
 }
+   public function scopeContentSearch($query,$content)
+{
+    if (!empty($content)) {
+    $query->Where('content', $content);
+  }
+}
+   public function scopeDateSearch($query,$date)
+{
+    // $date= strtotime($date->input('date'));
+
+  if (!empty($date)) {
+    $query->whereDate('date', $date);
+  }
+}
+
 
 public function scopeKeywordSearch($query, $keyword)
 {
